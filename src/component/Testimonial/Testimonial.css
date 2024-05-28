@@ -1,0 +1,41 @@
+.testimonial{
+    width: 100%;
+    margin: 30px auto;
+}
+.slider{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 8px;
+}
+.slider li{
+    padding: 15px;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.userinfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.userinfo img{
+    width: 60px;
+    margin: 5px 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.user{
+    margin-left: 10px;
+}
+.post{
+    margin: 10px 5px;
+    text-align: justify;
+    font-size: 18px;
+}
+@media (max-width:700px){
+    .slider{
+        grid-template-columns: 1fr;
+    }
+}
